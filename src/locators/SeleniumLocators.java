@@ -17,13 +17,14 @@ public class SeleniumLocators {
 	 public void idnameclassname() throws InterruptedException {
 		  driver.get("http://techlearn.in/admin");
 		  Thread.sleep(2000);
-		  driver.findElement(By.id("user_login")).sendKeys("pavithra");
+		  driver.findElement(By.id("user_login")).sendKeys("Dharani");
 		  Thread.sleep(2000);
 		  driver.findElement(By.name("pwd")).sendKeys("Hello@123");
 		  Thread.sleep(2000);
 		  driver.findElement(By.id("rememberme")).click();
 		  Thread.sleep(2000);
 		  driver.findElement(By.className("wp-login-lost-password")).click();
+		  Thread.sleep(2000);
 	 }
 	 @Test
 		public void cssSelectorPractice() throws InterruptedException {
@@ -31,7 +32,6 @@ public class SeleniumLocators {
 			Thread.sleep(2000);
 		//	driver.findElement(By.cssSelector("input#user_login")).sendKeys("Murugan");
 			driver.findElement(By.cssSelector("#user_login")).sendKeys("Murugan");
-			Thread.sleep(2000);
 			
 		//	driver.findElement(By.cssSelector("a.wp-login-lost-password")).click();
 			driver.findElement(By.cssSelector(".wp-login-lost-password")).click();

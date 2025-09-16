@@ -23,7 +23,6 @@ public class NavigationMethods {
 		driver.navigate().back();
 		Thread.sleep(2000);
 		driver.navigate().forward();
-		Thread.sleep(3000);
 		driver.navigate().refresh();
 		//driver.manage().deleteAllCookies();
 	}
