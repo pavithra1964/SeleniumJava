@@ -47,7 +47,7 @@ public void errorlinepageScreenshot() throws Exception {
 		catch(Exception e)
 		{
 			System.out.println("Error due to : "+e);
-			FailedLinePageScreenshot();
+			errorlinepageScreenshot();
 		}
 		
 		
