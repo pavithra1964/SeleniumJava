@@ -12,7 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ErrorPageScreenshot {
+public class FailedLinePageScreenshot {
 WebDriver driver;
 
 public void errorlinepageScreenshot() throws Exception {	
@@ -37,8 +37,8 @@ public void errorlinepageScreenshot() throws Exception {
 		driver.findElement(By.id("rememberme")).click();
 		Thread.sleep(1000);
 		
-		driver.findElement(By.name("wp-submitxyz")).click();
-		Thread.sleep(1000);
+		driver.findElement(By.name("wp-submit")).click();
+		Thread.sleep(8000);
 		
 		driver.findElement(By.className("wp-login-lost-password")).click();
 		Thread.sleep(1000);
@@ -47,7 +47,7 @@ public void errorlinepageScreenshot() throws Exception {
 		catch(Exception e)
 		{
 			System.out.println("Error due to : "+e);
-			errorlinepageScreenshot();
+			FailedLinePageScreenshot();
 		}
 		
 		
