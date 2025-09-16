@@ -1,6 +1,7 @@
 package withoutbrowser;
 
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
@@ -8,7 +9,7 @@ import org.testng.annotations.BeforeTest;
 public class NewTestGit {
 	WebDriver driver;
   @Test
-  public void techlearn() {
+  public void techlearn() throws InterruptedException {
 	  driver.get("https://techlearn.in/admin");
 	  Thread.sleep(2000);
 		  driver.findElement(By.id("user_login")).sendKeys("Dharani");
