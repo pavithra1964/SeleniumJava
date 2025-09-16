@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Microsoft Edge Browser Test Cases(failed)">
-    <parameter name="browser" value="Edge"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngframework.L_CrossBrowserTesting">
+      <class name="iframehandling.Iframepractice">
         <methods>
-          <include name="openBrowser"/>
-          <include name="googletestBeng"/>
-          <include name="googletechlearn"/>
-          <include name="selenium"/>
-          <include name="googlesearch"/>
-          <include name="googleSelenium"/>
-          <include name="techlearnlogin"/>
-          <include name="facebook"/>
-          <include name="googletest"/>
+          <include name="frames"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- testngframework.L_CrossBrowserTesting -->
+      </class> <!-- iframehandling.Iframepractice -->
     </classes>
-  </test> <!-- Microsoft Edge Browser Test Cases(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
